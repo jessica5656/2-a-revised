@@ -1,0 +1,189 @@
+
+/*-----------------------------------------------------------------
+		variables 
+-------------------------------------------------------------------*/
+
+html {
+	--border-radius-background: .25rem;
+	--color-silver: #93979a;
+	--color-silver-extra-light: #f6fbfe;
+	--color-silver-light: #c3c8cb;
+	--color-silver-dark: #65696c; 
+	--color-silver-extra-dark: #3b3e41;
+	--color-blue: #005dab;
+	--color-blue-light: #538add;
+	--color-blue-dark: #00347b;
+	--color-gold: #c9ac66;
+	--color-gold-light: #fede95;
+	--color-gold-dark: #967d39;
+	--font-primary: 'Istok Web', 'Arial', sans-serif;
+	--font-secondary: 'Lora', 'Helvetica', serif;
+	
+}
+
+
+/*-----------------------------------------------------------------
+		Typography
+
+		[colors: 
+		Liquid Luster Silver #93979a
+			Extra Light: #f6fbfe;
+			Light #c3c8cb
+			Dark #65696c
+			Extra Dark: #3b3e41;
+		Diode Blue #005dab
+			Light #538add
+			Dark #00347b
+		Golden Egg #c9ac66
+			Light #fede95
+			Dark #967d39
+
+		font-family: 'Lora', serif;
+		font-family: 'Istok Web', sans-serif;
+
+-------------------------------------------------------------------*/
+
+html {
+	color: var(--color-silver-extra-dark);
+	line-height: 1.4rem;
+}
+
+body {
+	font-family: var(--font-primary)
+	margin: auto;
+}
+
+main {
+	background-color: var(--color-silver-light);
+	padding: 1rem;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-secondary);
+}
+
+a {
+	color: var(--color-gold);
+	letter-spacing: .15rem;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+a:visted {
+	color: var(--color-blue-light);
+}
+
+a:hover {
+	color: var(--color-blue-dark);
+}
+
+a:focus {
+	color: var(--color-blue-light);
+	outline: none;
+	text-decoration: underline;
+}
+
+a:active {
+	color: var(--color-blue-light);
+}
+
+.logo {
+	font-size: 2rem;
+	text-transform: none;
+}
+/*-----------------------------------------------------------------
+		master page layout
+-------------------------------------------------------------------*/
+
+.introduction {
+	background-color: white;
+	border-radius: var(--border-radius-background);
+	margin: 2rem auto;
+	max-width: 35rem;
+	padding: 2rem;
+}
+
+.introduction h2 {
+	border-top: 1px solid var(--color-silver-extra-dark);
+	padding-top: 1rem;
+}
+
+/*-----------------------------------------------------------------
+		site header components
+-------------------------------------------------------------------*/
+
+header {
+	background-color: white;
+	padding: 2rem;
+}
+
+header ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+header ul li {
+	border-bottom: 1px solid var(--color-silver-extra-dark);
+	padding: 1rem 0 1rem;
+}
+
+/*-----------------------------------------------------------------
+		site footer components
+-------------------------------------------------------------------*/
+
+footer {
+	background-color: white; 
+	color: var(--color-silver);
+	padding: 1rem;
+}
+
+footer p {
+	max-width: 35rem;
+}
+
+footer ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+footer ul li {
+	color: var(--silver-extra-light);
+	display: inline;
+}
+
+footer a {
+	padding: 1rem;
+}
+
+.footer-creation-copywrite {
+	border-bottom: 1px solid var(--color-silver);
+	margin: auto;
+}
+
+/*-----------------------------------------------------------------
+		styles page components
+-------------------------------------------------------------------*/
+
+.swatches h3 {
+	margin: auto;
+	padding-bottom: 1rem;
+}
+
+.swatches {
+	background-color: white;
+	border-radius: var(--border-radius-background);
+	margin: 1rem auto;
+	padding: 2rem;
+}
+
+.swatches-font-primary {
+	font-family: var(--font-primary);
+	font-size: 1.5rem;
+}
+
+.swatches-font-secondary {
+	font-family: var(--font-secondary);
+	font-size: 1.5rem;
+}
+
